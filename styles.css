@@ -601,6 +601,8 @@ a {
 
   position: relative;
 
+  order: -1;
+
   min-height: 500px;
 
   display: flex;
@@ -661,6 +663,22 @@ a {
           rgba(255,255,255,0.8),
           rgba(238,224,248,0.7)
       );
+
+  overflow: hidden;
+}
+
+
+.profile-photo {
+
+  width: 100%;
+
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  object-position: center;
 }
 
 
@@ -853,25 +871,35 @@ a {
 
   top: 30%;
 
-  right: 16%;
+  right: -5%;
 
   animation-delay: -1s;
 }
 
 
-/* Phone icon */
+@media (max-width: 600px) {
 
-.chip-4 svg {
+  .chip-1 {
+      top: 13%;
+      left: 0;
+  }
 
-  fill: none;
+  .chip-2 {
+      top: 42%;
+      right: 0;
+      bottom: auto;
+  }
 
-  stroke: currentColor;
+  .chip-3 {
+      top: 58%;
+      left: 0;
+  }
 
-  stroke-width: 1.8;
+  .chip-4 {
+      top: 30%;
+      right: 0;
+  }
 
-  stroke-linecap: round;
-
-  stroke-linejoin: round;
 }
 
 
@@ -1499,6 +1527,12 @@ footer small {
       text-align: center;
 
       padding-top: 135px;
+  }
+
+
+  .hero-visual {
+
+      order: initial;
   }
 
 
