@@ -885,7 +885,7 @@ a {
   }
 
   .chip-2 {
-      top: 42%;
+      top: 48%;
       right: 0;
       bottom: auto;
   }
@@ -896,7 +896,7 @@ a {
   }
 
   .chip-4 {
-      top: 30%;
+      top: 20%;
       right: 0;
   }
 
@@ -1532,7 +1532,7 @@ footer small {
 
   .hero-visual {
 
-      order: initial;
+      order: -1;
   }
 
 
